@@ -6,9 +6,9 @@ date_created: "2024-09-26"
 ---
 
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 
-    <script>
+<script type="text/javascript">
       const queryString = window.location.search;
       console.log(queryString);
       const searchParams = new URLSearchParams(queryString);
@@ -59,4 +59,4 @@ date_created: "2024-09-26"
       };
       request.open("GET", csv_url, true);
       request.send();
-    </script>
+</script>
