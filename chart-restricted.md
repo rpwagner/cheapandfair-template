@@ -29,7 +29,14 @@ You will need to <a href="https://app.globus.org/groups/XXXXX/join">join the Ser
 
 
 <script type="text/javascript">
-     /* Your Collection UUID */
+
+      const queryString = window.location.search;
+      console.log(queryString);
+      const searchParams = new URLSearchParams(queryString);
+      csv_url = searchParams.get("csv");
+      console.log(csv_url);
+
+      /* Your Collection UUID */
       const collection = '85017645-30ef-4519-abbb-a73811b914b7';
 
       /* Your new cient ID */
@@ -85,11 +92,6 @@ You will need to <a href="https://app.globus.org/groups/XXXXX/join">join the Ser
 	  UI.SIGN_IN.style.display = 'block';
       });
 
-      const queryString = window.location.search;
-      console.log(queryString);
-      const searchParams = new URLSearchParams(queryString);
-      csv_url = searchParams.get("csv");
-      console.log(csv_url);
 
       if (manager.authenticated) {
           UI.USER_INFO.innerText = `Welcome, ${manager.user.name}!`;
