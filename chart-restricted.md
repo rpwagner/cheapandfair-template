@@ -30,17 +30,14 @@ You will need to <a href="https://app.globus.org/groups/XXXXX/join">join the Ser
 
 <script type="text/javascript">
 
-      const queryString = window.location.search;
-      console.log(queryString);
-      const searchParams = new URLSearchParams(queryString);
-      csv_url = searchParams.get("csv");
-      console.log(csv_url);
-
       /* Your Collection UUID */
       const collection = '85017645-30ef-4519-abbb-a73811b914b7';
 
       /* Your new cient ID */
       const client_id = '1dc53da9-4f45-43b2-b75f-54368fed256c';
+
+      /* The URL of the restricted csv file */
+      const csv_url = 'https://g-053b28.c2d0f8.bd7c.data.globus.org/datasets/cmb_spectra/cls.csv';
 
       globus.logger.setLogger(console);
       globus.logger.setLogLevel('DEBUG');
