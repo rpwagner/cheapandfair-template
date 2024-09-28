@@ -5,7 +5,10 @@ description: "Demo data repository"
 date_created: "2024-09-26"
 ---
 
+
+
 <script src="https://unpkg.com/@globus/sdk/dist/umd/globus.production.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 
 
@@ -13,13 +16,14 @@ This page demonstrates how to plot a CSV file hosted in a Globus Guest Collectio
 
 You will need to <a href="https://app.globus.org/groups/XXXXX/join">join the Serverless Data Users Globus Group</a> to view the sample chart.
 
-
 <button id="sign-in" style="display: none">Sign In</button>
 <button id="sign-out"  style="display: none">Sign Out</button>
-<code><pre id="user-information"></pre></code>
+
+<code id="user-information"></code>
+
 <div id="canvas">
 <h2>Sample Chart with Restricted Data</h2>
-<p>Plotted using <a href="https://www.chartjs.org/docs/latest/getting-started/">Chart.js</a>.
+<p>Plotted using <a href="https://www.chartjs.org/docs/latest/getting-started/">Chart.js</a>.</p>
 <canvas id="chart"></canvas>
 </div>
 
@@ -29,7 +33,7 @@ You will need to <a href="https://app.globus.org/groups/XXXXX/join">join the Ser
       const collection = '85017645-30ef-4519-abbb-a73811b914b7';
 
       /* Your new cient ID */
-      const client_id = 'f42cc8a6-a1f1-4e75-90e1-612febbb9e7f';
+      const client_id = '1dc53da9-4f45-43b2-b75f-54368fed256c';
 
       globus.logger.setLogger(console);
       globus.logger.setLogLevel('DEBUG');
